@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&D 5e Character Sheet</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <h1>Dungeons and Dragons 5e Character Sheet</h1>
+    <nav>
+        <ul class="navbar">
+            <li><a href="details.html"><p>Character Details</p></a></li>
+            <li><a href="spells.html"><p>Spellsheet</p></a></li>
+        </ul>
+    </nav>
     <form class="charsheet">
         <header>
             <section class="charname">
@@ -100,7 +107,126 @@
             </section>
         </header>
         <main>
-            
+            <section>
+                <section class="attributes">
+                    <div class="scores">
+                        <ul>
+                            <li>
+                                <div class="score">
+                                    <label for="str">Strength</label>
+                                    <input name="str" id="strscore" type="number">
+                                </div>
+                                <div class="mod">
+                                    <label id="strmod"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="score">
+                                    <label for="dex">Dexterity</label>
+                                    <input name="dex" id="dexscore" type="number">
+                                </div>
+                                <div class="mod">
+                                    <label id="dexmod"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="score">
+                                    <label for="con">Constitution</label>
+                                    <input name="con" id="conscore" type="number">
+                                </div>
+                                <div class="mod">
+                                    <label id="conmod"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="score">
+                                    <label for="int">Intelligence</label>
+                                    <input name="int" id="intscore" type="number">
+                                </div>
+                                <div class="mod">
+                                    <label id="intmod"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="score">
+                                    <label for="wis">Wisdom</label>
+                                    <input name="wis" id="wisscore" type="number">
+                                </div>
+                                <div class="mod">
+                                    <label id="wismod"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="score">
+                                    <label for="cha">Charisma</label>
+                                    <input name="cha" id="chascore" type="number">
+                                </div>
+                                <div class="mod">
+                                    <label id="chamod"></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="attr-apps">
+                        <div class="inspiration-box">
+                            <div class="label-container">
+                                <label for="inspiration">Inspiration</label>
+                            </div>
+                            <input name="inspiration" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="profbonus-box">
+                        <div class="label-container">
+                            <label for="profbonus">Proficiency Bonus</label>
+                        </div>
+                        <label name="profbonus" id="profbonus"></label>
+                    </div>
+                    <div class="saves-list">
+                        <ul>
+                            <li>
+                                <label for="str-save">Strength</label>
+                                <label name="str-save" id="str-save"></label>
+                                <input name="str-save-prof" type="checkbox">
+                            </li>
+                            <li>
+                                <label for="dex-save">Dexterity</label>
+                                <label name="dex-save" id="dex-save"></label>
+                                <input name="dex-save-prof" type="checkbox">
+                            </li>
+                            <li>
+                                <label for="con-save">Constitution</label>
+                                <label name="con-save" id="con-save"></label>
+                                <input name="con-save-prof" type="checkbox">
+                            </li>
+                            <li>
+                                <label for="int-save">Intelligence</label>
+                                <label name="int-save" id="int-save"></label>
+                                <input name="int-save-prof" type="checkbox">
+                            </li>
+                            <li>
+                                <label for="wis-save">Wisdom</label>
+                                <label name="wis-save" id="wis-save"></label>
+                                <input name="wis-save-prof" type="checkbox">
+                            </li>
+                            <li>
+                                <label for="cha-save">Charisma</label>
+                                <label name="cha-save" id="cha-save"></label>
+                                <input name="cha-save-prof" type="checkbox">
+                            </li>
+                        </ul>
+                        <div class="label">Saving Throws</div>
+                    </div>
+                    <div class="skills-list">
+                        <ul>
+                            <li>
+                                <label for="acrobatics">Acrobatics <span class="skill">(Dex)</span></label>
+                                <label name="acrobatics" id="acrobatics"></label>
+                                <input name="acrobatics-prof" type="checkbox">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
         </main>
     </form>
 </body>
